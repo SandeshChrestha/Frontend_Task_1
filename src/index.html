@@ -7,6 +7,9 @@
     <title>Edemy</title>
     <link rel="stylesheet" href="output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 
 
 
@@ -240,23 +243,22 @@
             deterruisset.</p>
 
     </div>
-
-    <!--cards-->
-    <!-- Cards -->
+    <!--Card-->
     <div class="container mx-auto px-4 sm:px-8 md:px-16 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Card 1 -->
             <div
-                class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-xs ml-4">
-                <img src="path/to/image1.jpg" alt="Card Image 1" class="w-full h-24 object-cover">
-                <div class="p-2">
+                class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-xs ml-2">
+                <img src="p2.jpg" alt="Card Image 1" class="w-full h-48 object-cover">
+                <div class="p-3">
                     <h3 class="text-lg font-semibold mb-1">Introduction to Web Design with HTML</h3>
-                    <p class="text-gray-600 mb-1 text-sm">Learn the basics of web design with HTML.</p>
+                    <p class="text-gray-600 mb-1 text-xs">Learn the basics of web design with HTML.</p>
                     <p class="text-md font-bold">$29.99</p>
                 </div>
             </div>
+            <!--card 2-->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src="path/to/image2.jpg" alt="Card Image 2" class="w-full h-48 object-cover">
+                <img src="p2.jpg" alt="Card Image 2" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">Introduction to Web Design with CSS</h3>
                     <p class="text-gray-600 mb-4">Dive into CSS and learn to style web pages.</p>
@@ -265,7 +267,7 @@
             </div>
             <!-- Card 3 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src="path/to/image3.jpg" alt="Card Image 3" class="w-full h-48 object-cover">
+                <img src="p2.jpg" alt="Card Image 3" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">JavaScript Basics for Beginners</h3>
                     <p class="text-gray-600 mb-4">Get started with JavaScript programming.</p>
@@ -274,7 +276,7 @@
             </div>
             <!-- Card 4 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src="path/to/image4.jpg" alt="Card Image 4" class="w-full h-48 object-cover">
+                <img src="p2.jpg" alt="Card Image 4" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">Responsive Design with Flexbox</h3>
                     <p class="text-gray-600 mb-4">Master the art of responsive design with Flexbox.</p>
@@ -283,7 +285,7 @@
             </div>
             <!-- Card 5 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src="path/to/image5.jpg" alt="Card Image 5" class="w-full h-48 object-cover">
+                <img src="p2.jpg" alt="Card Image 5" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">Introduction to Web Design with HTML</h3>
                     <p class="text-gray-600 mb-4">Learn the basics of web design with HTML.</p>
@@ -292,7 +294,7 @@
             </div>
             <!-- Card 6 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src="path/to/image6.jpg" alt="Card Image 6" class="w-full h-48 object-cover">
+                <img src="p2.jpg" alt="Card Image 6" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">Introduction to Web Design with CSS</h3>
                     <p class="text-gray-600 mb-4">Dive into CSS and learn to style web pages.</p>
@@ -301,7 +303,7 @@
             </div>
             <!-- Card 7 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src="path/to/image7.jpg" alt="Card Image 7" class="w-full h-48 object-cover">
+                <img src="p2.jpg" alt="Card Image 7" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">JavaScript Basics for Beginners</h3>
                     <p class="text-gray-600 mb-4">Get started with JavaScript programming.</p>
@@ -310,7 +312,7 @@
             </div>
             <!-- Card 8 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src="path/to/image8.jpg" alt="Card Image 8" class="w-full h-48 object-cover">
+                <img src="p2.jpg" alt="Card Image 8" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">Responsive Design with Flexbox</h3>
                     <p class="text-gray-600 mb-4">Master the art of responsive design with Flexbox.</p>
@@ -319,6 +321,72 @@
             </div>
         </div>
     </div>
+
+    <!--Button(Vview all courrrsres)-->
+    <div class="flex justify-center py-6">
+        <a href="#"
+            class="bg-transparent border border-gray-800 text-gray-800 px-6 py-2 rounded-full text-base font-medium hover:bg-blue-600 hover:text-white transition-colors">
+            View all courses
+        </a>
+    </div>
+
+    <!--Image(school achivement) -->
+
+
+    <!-- School Achievement Section -->
+    <div class="relative bg-cover bg-center text-white h-96 flex flex-col justify-center items-center"
+        style="background-image: url('p1.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">School Achievement</h2>
+            <p class="text-sm md:text-lg mt-2">Here you review statistics about</p>
+            <div class="flex justify-center items-center mt-6 space-x-12 md:space-x-16">
+                <!-- Logo and Text 1 -->
+                <div class="text-center">
+                    <img src="LO1.png" alt="Students Learning" class="mx-auto h-16 w-16">
+                    <p class="font-bold text-lg mt-2">65M+</p>
+                    <p class="font-semibold text-sm mt-2">Students Learning</p>
+                </div>
+                <!-- Logo and Text 2 -->
+                <div class="text-center">
+                    <img src="LO2.png" alt="Graduates" class="mx-auto h-16 w-16">
+                    <p class="font-bold text-lg mt-2">58566</p>
+                    <p class="font-semibold text-sm mt-2">Graduates</p>
+                </div>
+                <!-- Logo and Text 3 -->
+                <div class="text-center">
+                    <img src="LO3.png" alt="Free Courses" class="mx-auto h-16 w-16">
+                    <p class="font-bold text-lg mt-2">899899</p>
+                    <p class="font-semibold text-sm mt-2">Free Courses</p>
+                </div>
+                <!-- Logo and Text 4 -->
+                <div class="text-center">
+                    <img src="LO4.png" alt="Active Courses" class="mx-auto h-16 w-16">
+                    <p class="font-bold text-lg mt-2">900</p>
+                    <p class="font-semibold text-sm mt-2">Active Courses</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Text(Browse Our Top courses)  -->
+    <div class="flex flex-col items-center justify-center py-10 bg-white">
+        <!-- Hading-->
+        <h3 class=" text-2xl md:text-2xl font-bold mb-1">Upcoming Events</h3>
+        <!--sub-->
+        <p class="text-sm md:text-lg text-gray-600 max-w-2xl text-center">Cum doctus civibus efficiantur in imperdiet
+            deterruisset.</p>
+
+        <!-- Swiper -->
+
+
+
+
+
+
 
 
 
