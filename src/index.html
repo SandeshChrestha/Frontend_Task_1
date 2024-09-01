@@ -380,249 +380,419 @@
         <!--sub-->
         <p class="text-sm md:text-lg text-gray-600 max-w-2xl text-center">Cum doctus civibus efficiantur in imperdiet
             deterruisset.</p>
+    </div>
 
 
 
 
 
-        <!-- Swiper -->
-        <!-- Swiper Image Slider -->
+    <!-- Swiper -->
+    <!-- Swiper Image Slider -->
 
-        <div class="flex justify-center items-center w-full">
-            <div class="swiper mySwiper w-4/5">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <a href="#!" class="block">
-                            <img src="p1.jpg" alt="Image 1"
-                                class="w-full rounded-lg transition-transform duration-300 hover:scale-105">
-                        </a>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <a href="#!" class="block">
-                            <img src="p2.jpg" alt="Image 2"
-                                class="w-full rounded-lg transition-transform duration-300 hover:scale-105">
-                        </a>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <a href="#!" class="block">
-                            <img src="p3.jpg" alt="Image 3"
-                                class="w-full rounded-lg transition-transform duration-300 hover:scale-105">
-                        </a>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide">
-                        <a href="#!" class="block">
-                            <img src="p4.jpg" alt="Image 4"
-                                class="w-full rounded-lg transition-transform duration-300 hover:scale-105">
-                        </a>
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="swiper-slide">
-                        <a href="#!" class="block">
-                            <img src="p2.jpg" alt="Image 5"
-                                class="w-full rounded-lg transition-transform duration-300 hover:scale-105">
-                        </a>
+    <div class="flex justify-center items-center w-full">
+        <div class="swiper mySwiper w-4/5">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <a href="#!" class="block">
+                        <img src="p1.jpg" alt="Image 1"
+                            class="w-full rounded-lg transition-transform duration-300 hover:scale-105">
+                    </a>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <a href="#!" class="block">
+                        <img src="p2.jpg" alt="Image 2"
+                            class="w-full rounded-lg transition-transform duration-300 hover:scale-105">
+                    </a>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <a href="#!" class="block">
+                        <img src="p3.jpg" alt="Image 3"
+                            class="w-full rounded-lg transition-transform duration-300 hover:scale-105">
+                    </a>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <a href="#!" class="block">
+                        <img src="p4.jpg" alt="Image 4"
+                            class="w-full rounded-lg transition-transform duration-300 hover:scale-105">
+                    </a>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <a href="#!" class="block">
+                        <img src="p2.jpg" alt="Image 5"
+                            class="w-full rounded-lg transition-transform duration-300 hover:scale-105">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Swiper Configuration -->
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    // Render only 3 dots
+                    if (index < 3) {
+                        return '<span class="' + className + '"></span>';
+                    }
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+
+    <!-- Cards( popular courses)-->
+    <div class="py-8"></div>
+    <!-- Background Blue Container -->
+    <div class="bg-blue-900 w-full py-8 ">
+        <h2 class="text-3xl font-semibold text-center text-white">Popular Courses</h2>
+        <p class="text-center text-gray-300 mt-2">Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+
+        <div class="flex justify-between items-center mt-8">
+            <!-- Left Arrow Button -->
+            <button class="bg-white text-blue-900 rounded-full p-2">
+                &larr;
+            </button>
+
+            <div class="grid grid-cols-5 gap-6 w-full">
+                <!-- Course Card -->
+                <div class="bg-white text-black rounded-lg shadow-md overflow-hidden">
+                    <img src="p1.jpg" alt="Course Image" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Ali TUFAN</p>
+                        <h3 class="font-semibold text-lg">Introduction Web Design with HTML</h3>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="ml-2 text-gray-600">(6)</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
+                            <div class="flex items-center">
+                                <span class="material-icons">people</span>
+                                <span class="ml-1">1548</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="material-icons">chat</span>
+                                <span class="ml-1">25</span>
+                            </div>
+                            <span class="font-semibold text-blue-900">$69.95</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="bg-white text-black rounded-lg shadow-md overflow-hidden">
+                    <img src="p1.jpg" alt="Course Image" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Ali TUFAN</p>
+                        <h3 class="font-semibold text-lg">Introduction Web Design with HTML</h3>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="ml-2 text-gray-600">(6)</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
+                            <div class="flex items-center">
+                                <span class="material-icons">people</span>
+                                <span class="ml-1">1548</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="material-icons">chat</span>
+                                <span class="ml-1">25</span>
+                            </div>
+                            <span class="font-semibold text-blue-900">$69.95</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white text-black rounded-lg shadow-md overflow-hidden">
+                    <img src="p1.jpg" alt="Course Image" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Ali TUFAN</p>
+                        <h3 class="font-semibold text-lg">Introduction Web Design with HTML</h3>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="ml-2 text-gray-600">(6)</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
+                            <div class="flex items-center">
+                                <span class="material-icons">people</span>
+                                <span class="ml-1">1548</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="material-icons">chat</span>
+                                <span class="ml-1">25</span>
+                            </div>
+                            <span class="font-semibold text-blue-900">$69.95</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white text-black rounded-lg shadow-md overflow-hidden">
+                    <img src="p1.jpg" alt="Course Image" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Ali TUFAN</p>
+                        <h3 class="font-semibold text-lg">Introduction Web Design with HTML</h3>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="ml-2 text-gray-600">(6)</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
+                            <div class="flex items-center">
+                                <span class="material-icons">people</span>
+                                <span class="ml-1">1548</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="material-icons">chat</span>
+                                <span class="ml-1">25</span>
+                            </div>
+                            <span class="font-semibold text-blue-900">$69.95</span>
+                        </div>
+                    </div>
+                </div>
 
-
+                <div class="bg-white text-black rounded-lg shadow-md overflow-hidden">
+                    <img src="p1.jpg" alt="Course Image" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Ali TUFAN</p>
+                        <h3 class="font-semibold text-lg">Introduction Web Design with HTML</h3>
+                        <div class="flex items-center mt-2">
+                            <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="ml-2 text-gray-600">(6)</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
+                            <div class="flex items-center">
+                                <span class="material-icons">people</span>
+                                <span class="ml-1">1548</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="material-icons">chat</span>
+                                <span class="ml-1">25</span>
+                            </div>
+                            <span class="font-semibold text-blue-900">$69.95</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Right Arrow Button -->
+            <button class="bg-white text-blue-900 rounded-full p-2">
+                &rarr;
+            </button>
         </div>
+    </div>
+    </div>
 
 
-
-
-        <!-- Swiper Configuration -->
-        <script>
-            const swiper = new Swiper('.mySwiper', {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                loop: true,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                    renderBullet: function (index, className) {
-                        // Render only 3 dots
-                        if (index < 3) {
-                            return '<span class="' + className + '"></span>';
-                        }
-                    },
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        </script>
-
-
-
-        <!-- Cards( popular courses)-->
-        <div class="py-8"></div>
-                <!-- Background Blue Container -->
-                <div class="bg-blue-900 w-full py-8 ">
-                    <h2 class="text-3xl font-semibold text-center text-white">Popular Courses</h2>
-                    <p class="text-center text-gray-300 mt-2">Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
-        
-                    <div class="flex justify-between items-center mt-8">
-                        <!-- Left Arrow Button -->
-                        <button class="bg-white text-blue-900 rounded-full p-2">
-                            &larr;
-                        </button>
-        
-                        <div class="grid grid-cols-5 gap-6 w-full">
-                            <!-- Course Card -->
-                            <div class="bg-white text-black rounded-lg shadow-md overflow-hidden">
-                                <img src="p1.jpg" alt="Course Image" class="w-full h-40 object-cover">
-                                <div class="p-4">
-                                    <p class="text-sm text-gray-600">Ali TUFAN</p>
-                                    <h3 class="font-semibold text-lg">Introduction Web Design with HTML</h3>
-                                    <div class="flex items-center mt-2">
-                                        <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                                        <span class="ml-2 text-gray-600">(6)</span>
-                                    </div>
-                                    <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
-                                        <div class="flex items-center">
-                                            <span class="material-icons">people</span>
-                                            <span class="ml-1">1548</span>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <span class="material-icons">chat</span>
-                                            <span class="ml-1">25</span>
-                                        </div>
-                                        <span class="font-semibold text-blue-900">$69.95</span>
-                                    </div>
-                                </div>
+    <!-- Feed back section-->
+    <div class="max-w-5xl mx-auto py-16">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="flex justify-between items-center space-x-4">
+                        <!-- Testimonial 1 -->
+                        <div class="bg-blue-600 text-white p-4 rounded-lg shadow-lg w-1/3">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-300" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm2.667 13.333h-1.334v-2h-1.334v2H8.667v-4.667h4v4.667zM5.667 13.333H4.333v-2H3v2H1.667v-4.667h4v4.667z" />
+                                </svg>
+                                <p class="ml-2 text-left text-sm">
+                                    The team was incredibly helpful and the final design was beyond expectations.
+                                </p>
                             </div>
-        
-                            <div class="bg-white text-black rounded-lg shadow-md overflow-hidden">
-                                <img src="p1.jpg" alt="Course Image" class="w-full h-40 object-cover">
-                                <div class="p-4">
-                                    <p class="text-sm text-gray-600">Ali TUFAN</p>
-                                    <h3 class="font-semibold text-lg">Introduction Web Design with HTML</h3>
-                                    <div class="flex items-center mt-2">
-                                        <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                                        <span class="ml-2 text-gray-600">(6)</span>
-                                    </div>
-                                    <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
-                                        <div class="flex items-center">
-                                            <span class="material-icons">people</span>
-                                            <span class="ml-1">1548</span>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <span class="material-icons">chat</span>
-                                            <span class="ml-1">25</span>
-                                        </div>
-                                        <span class="font-semibold text-blue-900">$69.95</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white text-black rounded-lg shadow-md overflow-hidden">
-                                <img src="p1.jpg" alt="Course Image" class="w-full h-40 object-cover">
-                                <div class="p-4">
-                                    <p class="text-sm text-gray-600">Ali TUFAN</p>
-                                    <h3 class="font-semibold text-lg">Introduction Web Design with HTML</h3>
-                                    <div class="flex items-center mt-2">
-                                        <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                                        <span class="ml-2 text-gray-600">(6)</span>
-                                    </div>
-                                    <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
-                                        <div class="flex items-center">
-                                            <span class="material-icons">people</span>
-                                            <span class="ml-1">1548</span>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <span class="material-icons">chat</span>
-                                            <span class="ml-1">25</span>
-                                        </div>
-                                        <span class="font-semibold text-blue-900">$69.95</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white text-black rounded-lg shadow-md overflow-hidden">
-                                <img src="p1.jpg" alt="Course Image" class="w-full h-40 object-cover">
-                                <div class="p-4">
-                                    <p class="text-sm text-gray-600">Ali TUFAN</p>
-                                    <h3 class="font-semibold text-lg">Introduction Web Design with HTML</h3>
-                                    <div class="flex items-center mt-2">
-                                        <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                                        <span class="ml-2 text-gray-600">(6)</span>
-                                    </div>
-                                    <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
-                                        <div class="flex items-center">
-                                            <span class="material-icons">people</span>
-                                            <span class="ml-1">1548</span>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <span class="material-icons">chat</span>
-                                            <span class="ml-1">25</span>
-                                        </div>
-                                        <span class="font-semibold text-blue-900">$69.95</span>
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <div class="bg-white text-black rounded-lg shadow-md overflow-hidden">
-                                <img src="p1.jpg" alt="Course Image" class="w-full h-40 object-cover">
-                                <div class="p-4">
-                                    <p class="text-sm text-gray-600">Ali TUFAN</p>
-                                    <h3 class="font-semibold text-lg">Introduction Web Design with HTML</h3>
-                                    <div class="flex items-center mt-2">
-                                        <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                                        <span class="ml-2 text-gray-600">(6)</span>
-                                    </div>
-                                    <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
-                                        <div class="flex items-center">
-                                            <span class="material-icons">people</span>
-                                            <span class="ml-1">1548</span>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <span class="material-icons">chat</span>
-                                            <span class="ml-1">25</span>
-                                        </div>
-                                        <span class="font-semibold text-blue-900">$69.95</span>
-                                    </div>
-                                </div>
+                            <div class="mt-4 text-center">
+                                <img class="w-10 h-10 rounded-full mx-auto" src="https://via.placeholder.com/100"
+                                    alt="Client photo">
+                                <h3 class="mt-2 text-sm font-semibold">John Doe</h3>
+                                <p class="text-blue-300 text-xs">Client</p>
                             </div>
                         </div>
-        
-                        <!-- Right Arrow Button -->
-                        <button class="bg-white text-blue-900 rounded-full p-2">
-                            &rarr;
-                        </button>
+
+                        <!-- Testimonial 2 -->
+                        <div class="bg-blue-600 text-white p-4 rounded-lg shadow-lg w-1/3">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-300" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm2.667 13.333h-1.334v-2h-1.334v2H8.667v-4.667h4v4.667zM5.667 13.333H4.333v-2H3v2H1.667v-4.667h4v4.667z" />
+                                </svg>
+                                <p class="ml-2 text-left text-sm">
+                                    I felt supported throughout the entire process. Excellent service!
+                                </p>
+                            </div>
+                            <div class="mt-4 text-center">
+                                <img class="w-10 h-10 rounded-full mx-auto" src="https://via.placeholder.com/100"
+                                    alt="Client photo">
+                                <h3 class="mt-2 text-sm font-semibold">Jane Smith</h3>
+                                <p class="text-blue-300 text-xs">Client</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="bg-blue-600 text-white p-4 rounded-lg shadow-lg w-1/3">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-300" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm2.667 13.333h-1.334v-2h-1.334v2H8.667v-4.667h4v4.667zM5.667 13.333H4.333v-2H3v2H1.667v-4.667h4v4.667z" />
+                                </svg>
+                                <p class="ml-2 text-left text-sm">
+                                    A truly enjoyable experience. The team exceeded my expectations.
+                                </p>
+                            </div>
+                            <div class="mt-4 text-center">
+                                <img class="w-10 h-10 rounded-full mx-auto" src="https://via.placeholder.com/100"
+                                    alt="Client photo">
+                                <h3 class="mt-2 text-sm font-semibold">Ali TUFAN</h3>
+                                <p class="text-blue-300 text-xs">Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <!-- Testimonial 4, 5, 6 -->
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination mt-8"></div>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-between  bg-white p-10">
+        <!-- Main content -->
+        <div class="flex justify-center items-start flex-grow">
+            <!-- Left Section -->
+            <div class="bg-gray-200 p-10 rounded-lg shadow-lg w-full mx-4">
+                <h2 class="text-3xl font-bold mb-6">Become an Instructor</h2>
+                <p class="text-gray-700 mb-8">Teach what you love. Dove School gives you the tools to create an online
+                    course.</p>
+                <button class="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700">Start Teaching</button>
+            </div>
+
+            <!-- Right Section -->
+            <div class="bg-gray-200 p-10 rounded-lg shadow-lg w-full mx-4">
+                <h2 class="text-3xl font-bold mb-6">Dove School For Business</h2>
+                <p class="text-gray-700 mb-8">Get unlimited access to 2,500 of Udemy’s top courses for your team.</p>
+                <button class="bg-gray-800 text-white py-3 px-6 rounded hover:bg-gray-900">Doing Business</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="flex flex-wrap justify-between">
+                <!-- Contact Section -->
+                <div class="w-full md:w-1/5 mb-6 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">CONTACT</h4>
+                    <p>329 Queensberry Street, North Melbourne<br>
+                        VIC 3051, Australia.<br>
+                        123 456 7890<br>
+                        <a href="mailto:support@edumy.com" class="text-gray-400">support@edumy.com</a>
+                    </p>
+                </div>
+                <!-- Company Section -->
+                <div class="w-full md:w-1/5 mb-6 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">COMPANY</h4>
+                    <ul>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Become a Teacher</a></li>
+                    </ul>
+                </div>
+                <!-- Programs Section -->
+                <div class="w-full md:w-1/5 mb-6 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">PROGRAMS</h4>
+                    <ul>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Nanodegree Plus</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Veterans</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Georgia</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Self-Driving Car</a></li>
+                    </ul>
+                </div>
+                <!-- Support Section -->
+                <div class="w-full md:w-1/5 mb-6 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">SUPPORT</h4>
+                    <ul>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Forums</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Language Packs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Release Status</a></li>
+                    </ul>
+                </div>
+                <!-- Mobile Section -->
+                <div class="w-full md:w-1/5 mb-6 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">MOBILE</h4>
+                    <div class="flex flex-col">
+                        <a href="#"
+                            class="bg-gray-800 p-3 mb-2 rounded flex items-center justify-center hover:bg-gray-700">
+                            <span class="mr-2">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <!-- Apple Icon SVG -->
+                                    <path d="..." />
+                                </svg>
+                            </span>
+                            <span>App Store</span>
+                        </a>
+                        <a href="#" class="bg-gray-800 p-3 rounded flex items-center justify-center hover:bg-gray-700">
+                            <span class="mr-2">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <!-- Google Play Icon SVG -->
+                                    <path d="..." />
+                                </svg>
+                            </span>
+                            <span>Google Play</span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </body>
-        </html>
-         
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </div>
+        <!-- Bottom Section -->
+        <div class="border-t border-gray-700 mt-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between">
+                <div class="flex items-center">
+                    <span class="text-white font-bold text-lg">EDUMY</span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white">Home</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Sitemap</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Purchase</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
 
 
 
@@ -633,7 +803,6 @@
 
 
 
-
-        </body>
+</body>
 
 </html>
